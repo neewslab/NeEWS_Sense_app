@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calibration">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="380dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="132dp"
+        android:text="Enter the regression curve parameters and the frequency range"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText32"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="a"
+        android:inputType="textPersonName"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editText33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText33"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="288dp"
+        android:ems="10"
+        android:hint="b"
+        android:inputType="textPersonName"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editText34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText34"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="352dp"
+        android:ems="10"
+        android:hint="Resonant frequency lower bound(MHz)"
+        android:inputType="textPersonName"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editText35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText35"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="408dp"
+        android:ems="10"
+        android:hint="Resonant frequency higher bound(MHz)"
+        android:inputType="textPersonName"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="173dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="492dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:onClick="startSensing21"
+        android:text="Read data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="397dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#009688"
+        android:text="NeEWS Sense App"
+        android:textAllCaps="true"
+        android:textColor="#D4E3E1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textview30"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="363dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:text="Calibration Data for Nano VNA:"
+        android:textColor="#009688"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView31"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
